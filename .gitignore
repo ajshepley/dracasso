@@ -61,3 +61,5 @@ crashlytics-build.properties
 # other
 
 .DS_STORE
+
+todo.md
