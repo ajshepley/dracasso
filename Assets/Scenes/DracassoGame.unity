@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2751119caf744348887dfcfee5e9308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothingSpeed: 0.125
+  smoothingSpeed: 0.75
   cameraOffset: {x: 0, y: 3, z: 0}
   targetPlayerTransform: {fileID: 0}
   allowVerticalCameraMovement: 1
