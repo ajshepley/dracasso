@@ -524,6 +524,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpAmount: 5
+  maxHorizontalMoveSpeed: 6
+  maxAirMovementAdjustPercent: 0.25
 --- !u!50 &826329251
 Rigidbody2D:
   serializedVersion: 4
