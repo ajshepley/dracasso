@@ -22,7 +22,6 @@ public class Canvas : MonoBehaviour
         }
         var resourceNumber = Mathf.Ceil(health / 10);
         var resource = "" + resourceNumber;
-        Debug.Log(resource);
         this.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(resource);
     }
 }
