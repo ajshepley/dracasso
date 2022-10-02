@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: 8e268cb7a6f84144abfa39a93ca0c92a
   - enabled: 1
-    path: Assets/Scenes/DracassoGame2.unity
-    guid: 01a1901db574f49e6a73c077df0c8848
+    path: Assets/Scenes/DracassoGame.unity
+    guid: dd1a9e1315468421c85c764932315d8e
   - enabled: 1
     path: Assets/Scenes/Outro.unity
     guid: beb59dde4b5724742867ee06d85b28f6
+  - enabled: 0
+    path: Assets/Scenes/DracassoGame2.unity
+    guid: 01a1901db574f49e6a73c077df0c8848
   m_configObjects: {}
