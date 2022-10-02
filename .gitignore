@@ -64,16 +64,3 @@ crashlytics-build.properties
 
 # todo.md
 .vscode/*
-
-*.dwlt
-ProjectSettings/BurstAotSettings_StandaloneWindows.json
-ProjectSettings/BurstAotSettings_WebGL.json
-ProjectSettings/CommonBurstAotSettings.json
-ProjectSettings/EditorBuildSettings.asset
-ProjectSettings/TimelineSettings.asset
-ProjectSettings/EditorBuildSettings.asset
-ProjectSettings/EditorBuildSettings.asset
-*.dwlt
-ProjectSettings/EditorBuildSettings.asset
-UserSettings/Layouts/default-2021.dwlt
-ProjectSettings/EditorBuildSettings.asset
