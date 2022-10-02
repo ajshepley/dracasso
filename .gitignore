@@ -64,3 +64,8 @@ crashlytics-build.properties
 
 # todo.md
 .vscode/*
+
+ProjectSettings/BurstAotSettings_StandaloneWindows.json
+ProjectSettings/BurstAotSettings_WebGL.json
+ProjectSettings/CommonBurstAotSettings.json
+ProjectSettings/TimelineSettings.asset
