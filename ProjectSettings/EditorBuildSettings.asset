@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 8e268cb7a6f84144abfa39a93ca0c92a
+  - enabled: 1
+    path: Assets/Scenes/DracassoGame.unity
+    guid: 01a1901db574f49e6a73c077df0c8848
   m_configObjects: {}
