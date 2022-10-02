@@ -60,6 +60,7 @@ public class PlayerCasso : MonoBehaviour
 
     private void MoveLeftClamped()
     {
+        // Apparently `Vector2.SmoothDamp()` is better for this.
         if (this.rigidbodyComponent.velocity.x > -this.maxHorizontalMoveSpeed)
         {
             Debug.Log("Velocity is " + this.rigidbodyComponent.velocity);
