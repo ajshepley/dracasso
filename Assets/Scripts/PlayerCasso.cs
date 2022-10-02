@@ -27,8 +27,6 @@ public class PlayerCasso : MonoBehaviour
         {
             this.rigidbodyComponent.AddForce(Vector2.up * this.jumpAmount, ForceMode2D.Impulse);
         }
-
-        // if (Input.GetKeyDown(KEyCode.Space))
     }
 
     void OnCollisionEnter2D(Collision2D theCollision)

@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 402917450}
   m_Layer: 10
   m_Name: ground_platform
-  m_TagString: Untagged
+  m_TagString: platform_ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
