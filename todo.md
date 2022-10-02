@@ -1,6 +1,6 @@
 # TODO
 
-- [ ] Movement, left, right, jumping / gravity.
+- [x] Movement, left, right, jumping / gravity.
 
 - [ ] health bars, state tracking
 
@@ -23,3 +23,4 @@
 ---
 
 - [ ] Magnetic force to pull user towards 'enemy' sprites
+  
