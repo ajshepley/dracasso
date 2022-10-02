@@ -2,8 +2,6 @@
 
 - [x] Movement, left, right, jumping / gravity.
 
-- [ ] anchor
-
 - [ ] health bars, state tracking
   - [ ] UI in general. Put on camera object as children?
 
@@ -11,9 +9,9 @@
 
 - [ ] Convert entities to prefabs, expose through second scene to allow collab editing
 
-- [ ] Camera following player
-  - [ ] Follow horizontally, but locked vertically?
-  - [ ] Zooming?
+- [x] Camera following player
+  - [x] Follow horizontally, but locked vertically?
+  - [x] Zooming?
 
 - [ ] Add enemies/npc sprites
   - Rigidbodies, collision
@@ -31,3 +29,6 @@
 ---
 
 - [ ] Magnetic force to pull user towards 'enemy' sprites
+
+- [ ] anchor camera/fix projection / aspect ratio
+
