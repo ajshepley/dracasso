@@ -82,7 +82,7 @@ public class PlayerCasso : MonoBehaviour
         }
 
         Debug.Log("Position is: " + this.rigidbodyComponent.position.x);
-        if (this.rigidbodyComponent.position.x > 100.0) {        
+        if (this.rigidbodyComponent.position.x > 100.0) {
             SceneManager.LoadScene("Outro");
         }
     }
