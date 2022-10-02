@@ -50,9 +50,7 @@ public class CameraMovement : MonoBehaviour
     {
         // Clamp x to not go less than screen, greater than end of stage
         float potentialX = Mathf.Max(desiredPosition.x, 0.0f);
-        potentialX = Mathf.Min(desiredPosition.x, this.lengthOfStage);
-
-        Debug.Log("Potential X " + potentialX + " desired x " + desiredPosition.x);
+        potentialX = Mathf.Min(potentialX, this.lengthOfStage);
         
         float potentialY = this.allowVerticalCameraMovement ? desiredPosition.y : STATIC_CAMERA_Y_POSITION;
         potentialY = Mathf.Max(potentialY, 0.0f);

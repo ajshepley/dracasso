@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerCasso : MonoBehaviour
 {
+    private const float STAGE_MINIMUM_X = -10.0f;
+
     private Rigidbody2D rigidbodyComponent;
     private Collider2D collider2DComponent;
 
@@ -24,7 +26,7 @@ public class PlayerCasso : MonoBehaviour
         // check isSucking() later, isCutScene(), etc.
         // && this.rigidbodyComponent.velocity.y == 0; -- sticky
         return this.isGrounded &&
-            (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.W));
+            (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W));
     }
 
     private bool ShouldMoveRight()
@@ -75,6 +77,19 @@ public class PlayerCasso : MonoBehaviour
         }
     }
 
+    private void ClampToStageBounds()
+    {
+        if (transform.position.x < STAGE_MINIMUM_X)
+        {
+            transform.position = new Vector2(STAGE_MINIMUM_X + 0.1f, transform.position.y);
+            this.rigidbodyComponent.velocity = new Vector2(0.0f, this.rigidbodyComponent.velocity.y);
+        }
+        else // else if somehow past right bounds
+        {
+
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -99,6 +114,9 @@ public class PlayerCasso : MonoBehaviour
         {
             MoveLeftClamped();
         }
+
+        // Must come last
+        ClampToStageBounds();
     }
 
     void OnCollisionEnter2D(Collision2D theCollision)
