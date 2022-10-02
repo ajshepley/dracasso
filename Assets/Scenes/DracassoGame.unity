@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothingSpeed: 0.125
-  cameraOffset: {x: 0, y: 0, z: 0}
+  cameraOffset: {x: 0, y: 3, z: 0}
   targetPlayerTransform: {fileID: 0}
   allowVerticalCameraMovement: 1
   allowZoomingCameraMovement: 0

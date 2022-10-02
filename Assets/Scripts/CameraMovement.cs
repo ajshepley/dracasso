@@ -12,11 +12,12 @@ public class CameraMovement : MonoBehaviour
 
     private Vector3 cameraVelocity = Vector2.zero;
 
+    // Change in unity editor. Higher value = camera is slower to catch up.
     [SerializeField] [Range(0.01f, 1f)]
-    private float smoothingSpeed = 0.125f;
+    private float smoothingSpeed = 0.75f;
 
     [SerializeField]
-    private Vector3 cameraOffset;
+    private Vector3 cameraOffset = new Vector3(0.0f, 3.0f, 0.0f);
 
     // Player GameObject. For simplicity, grabbing it through FindObject in start rather than unityeditor.
     [SerializeField]
@@ -52,8 +53,8 @@ public class CameraMovement : MonoBehaviour
         float potentialX = Mathf.Max(desiredPosition.x, 0.0f);
         potentialX = Mathf.Min(potentialX, this.lengthOfStage);
         
-        float potentialY = this.allowVerticalCameraMovement ? desiredPosition.y : STATIC_CAMERA_Y_POSITION;
-        potentialY = Mathf.Max(potentialY, 0.0f);
+        float potentialY = Mathf.Max(desiredPosition.y, 0.0f);
+        potentialY = this.allowVerticalCameraMovement ? potentialY : STATIC_CAMERA_Y_POSITION;
 
         float potentialZ = this.allowZoomingCameraMovement ? desiredPosition.z : STATIC_CAMERA_Z_POSITION;
         return new Vector3(potentialX, potentialY, potentialZ);
