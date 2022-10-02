@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerCasso : MonoBehaviour
@@ -57,6 +58,11 @@ public class PlayerCasso : MonoBehaviour
         else
         {
             this.rigidbodyComponent.velocity = new Vector2(this.maxHorizontalMoveSpeed, this.rigidbodyComponent.velocity.y);
+        }
+
+        Debug.Log("Position is: " + this.rigidbodyComponent.position.x);
+        if (this.rigidbodyComponent.position.x > 100.0) {        
+            SceneManager.LoadScene("Outro");
         }
     }
 

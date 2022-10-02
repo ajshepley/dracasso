@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DracassoGame.unity
     guid: 01a1901db574f49e6a73c077df0c8848
+  - enabled: 1
+    path: Assets/Scenes/Outro.unity
+    guid: beb59dde4b5724742867ee06d85b28f6
   m_configObjects: {}
